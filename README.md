@@ -7,6 +7,6 @@ Este projeto tem como objetivo desenvolver uma aplicação web para um restauran
 ## Integrantes do Grupo
 
 * Matheus Yan Machado Santos
-* 
+* Odilon Francelino de Pontes Neto 
 * 
 * 
