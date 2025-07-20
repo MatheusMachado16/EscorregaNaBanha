@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-Este projeto tem como objetivo desenvolver uma aplicação web para um restaurante, permitindo a exibição de cardápio, informações do local e opções de contato. Serão utilizadas tecnologias como HTML, CSS e JavaScript para a construção da interface.
+Este projeto tem como objetivo desenvolver uma aplicação web para um restaurante, permitindo a exibição de cardápio, informações do local e opções de contato. Serão utilizadas tecnologias como HTML e CSS para a construção da interface.
 
 ## Integrantes do Grupo
 
