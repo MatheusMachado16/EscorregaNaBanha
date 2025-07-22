@@ -16,6 +16,15 @@ def contatos():
 def sobre():
     return render_template("sobre.html")
 
+@app.route("/galeria")
+def galeria():
+    return render_template("galeria.html")
+
+@app.route("/cardapio")
+def cardapio():
+    return render_template("cardapio.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
