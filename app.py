@@ -1,15 +1,13 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-# route ->
-# função ->
-# template 
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
-@app.route("/contatos")
-def contatos():
+@app.route("/contato")
+def contato():
     return render_template("contato.html")
 
 @app.route("/sobre")
