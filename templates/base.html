@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escorrega na Banha</title>
+    <title>Base</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-        <!-- PÁGINA INICIAL -->
+        <!-- TEMPLATE BASE COM MENU, RODAPÉ, ETC. -->
 <body>
-    <h1>Página Inicial</h1>
     <div class="container">
-        <nav class="sidebar">
+        <nav class="sidebar"> 
             <div class="logo">
                 <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" height="80">
             </div>
@@ -22,10 +21,12 @@
                 <li><a href="{{ url_for('contato') }}">Contato</a></li>
             </ul>
         </nav>
+        <!-- CONTEÚDO PRINCIPAL -->
         <main class="conteudo">
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed nesciunt recusandae, nulla veritatis dolorem optio incidunt vitae non temporibus iste modi alias suscipit perferendis ullam ratione exercitationem, quibusdam aut.</P>
         </main>
     </div>
+        <!-- RODAPÉ -->
     <footer class="rodapé">
         <p>&copy; 2025 Escorrega na Banha. Todos os direitos reservados.</p>
     </footer>
