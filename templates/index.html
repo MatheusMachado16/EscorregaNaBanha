@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escorrega na Banha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Escorrega na Banha</title>
+
+
 </head>
-        <!-- PÁGINA INICIAL -->
+<!-- PÁGINA INICIAL -->
+
 <body>
-    <h1>Página Inicial</h1>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="logo">
-                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" height="80">
+    <header class="header">
+        <section>
+            <a href="{{ url_for('index') }}" class="logo">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Escorrega na Banha" height="70">
+            </a>
+            <nav class="navbar">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('sobre') }}">Sobre</a>
+                <a href="{{ url_for('cardapio') }}">Cardápio</a>
+                <a href="{{ url_for('galeria') }}">Avaliações</a>
+                <a href="{{ url_for('contato') }}">Contato</a>
+            </nav>
+
+            <div class="icons">
+                <img width="20" height="20" src="https://img.icons8.com/ios-filled/20/8b4513/search--v2.png"
+                    alt="search icon" />
+                <img width="20" height="20" src="https://img.icons8.com/material-rounded/20/8b4513/shopping-cart.png"
+                    alt="shopping cart icon" />
             </div>
-            <ul class="menu">
-                <li><a href="{{ url_for('index') }}">Início</a></li>
-                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
-                <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
-                <li><a href="{{ url_for('galeria') }}">Galeria</a></li>
-                <li><a href="{{ url_for('contato') }}">Contato</a></li>
-            </ul>
-        </nav>
-        <main class="conteudo">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed nesciunt recusandae, nulla veritatis dolorem optio incidunt vitae non temporibus iste modi alias suscipit perferendis ullam ratione exercitationem, quibusdam aut.</P>
-        </main>
-    </div>
-    <footer class="rodapé">
-        <p>&copy; 2025 Escorrega na Banha. Todos os direitos reservados.</p>
-    </footer>
+        </section>
+    </header>
+
 </body>
+
 </html>

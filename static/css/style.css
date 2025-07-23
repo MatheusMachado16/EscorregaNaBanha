@@ -1,3 +1,69 @@
-h1 {
-    color: black;
+:root {
+    --main-color: #8b4513;
+    --bg: #f6e5c7;
+    --border: 0.1rem solid rgba(139, 69, 19, 0.6);
+    --preto: #000;
+    --branco: #fff;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.navbar a:hover {
+    color: red;
+    border-bottom: 0.1rem solid red;
+    padding-bottom: 0.5rem;
+    font-size: 2.2rem;
+
+}
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+.icons img:hover {
+    transform: scale(1.5);
 }
