@@ -7,11 +7,6 @@
     --branco: #fff;
     --accent-color: #005f8e;
     --texto-sobre-bege: #2b1f0e;
-
-    --font-base: 1.6rem;
-    --line-height-base: 1.5;
-    --spacing-base: 1rem;
-
     font-size: 10px;
 }
 
@@ -65,7 +60,7 @@ section {
     font-size: 1.8rem;
     color: var(--branco);
     cursor: pointer;
-    outline: none; 
+    outline: none;
 }
 
 .navbar a:hover,
@@ -73,14 +68,14 @@ section {
     border-bottom: 0.1rem solid var(--branco);
     padding-bottom: 0.5rem;
     font-size: 2.2rem;
-    outline: none; 
+    outline: none;
 }
 
 .icons img {
     margin: 1rem;
     cursor: pointer;
     will-change: transform;
-    outline: none; 
+    outline: none;
 }
 
 .icons img:hover {
@@ -88,7 +83,7 @@ section {
 }
 
 .icons img:focus {
-    outline: none; 
+    outline: none;
 }
 
 .btn {
@@ -130,21 +125,21 @@ section {
 
 .content h3 {
     color: var(--bege-diferente);
-    font-size: 4rem;
+    font-size: 5rem;
     text-transform: uppercase;
     line-height: 1.1;
 }
 
 .content p {
     color: var(--branco);
-    font-size: var(--font-base);
+    font-size: 2rem;
     font-weight: 100;
-    line-height: var(--line-height-base);
-    padding: var(--spacing-base) 0;
+    line-height: 1.5;
+    padding: 1rem 0;
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--texto-sobre-bege);
     text-align: center;
     text-transform: uppercase;
@@ -161,31 +156,31 @@ section {
     align-items: center;
     background-color: #8B4513;
     gap: 1.5rem;
-    padding: 2rem;
-    border-radius: 1rem;
 }
 
 .container-img {
-    flex: 1;
+    flex: 2;
 }
 
 .container-img img {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
     display: block;
 }
 
 .about .content {
-    flex: 2;
-    background-color: var(--bege-color);
-    padding: 2rem;
-    border-radius: 1rem;
+    flex: 1;
+    padding: 1rem;
 }
 
 .row .content h3 {
-    color: var(--texto-sobre-bege);
+    color: var(--bege-diferente);
     margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.row .content p {
+    font-size: 1.4rem;
 }
 
 .btn-container {
