@@ -128,6 +128,8 @@ section {
     font-size: 5rem;
     text-transform: uppercase;
     line-height: 1.1;
+    text-shadow: 1px 1px 4px black;
+
 }
 
 .content p {
@@ -156,6 +158,7 @@ section {
     align-items: center;
     background-color: #8B4513;
     gap: 1.5rem;
+    border-radius: 1rem;
 }
 
 .container-img {
@@ -166,6 +169,7 @@ section {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 1rem;
 }
 
 .about .content {
