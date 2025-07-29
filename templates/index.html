@@ -1,46 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title %}inicio{% endblock %}
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="icon" href="{{ url_for('static', filename='img/favicon-32x32.png') }}" type="image/png">
-
-    <title>Document</title>
-</head>
-
-<body>
+{% block blockcontest %}
     <div class="background-fixo"></div>
-    <header class="header">
-        <section>
-            <a href="#" class="logo">
-                <img height="90" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
-            </a>
-            <nav class="navbar">
-                <a href="#home">Ínicio</a>
-                <a href="#about">Sobre</a>
-                <a href="#menu">Cardápio</a>
-                <a href="#review">Avaliações</a>
-                <a href="#address">Endereço</a>
-            </nav>
-
-            <div class="icons">
-                <img width="20" height="20" src="https://img.icons8.com/ios-filled/20/ffffff/search--v2.png"
-                    alt="search--v2" />
-                <img width="20" height="20" src="https://img.icons8.com/material-rounded/20/ffffff/shopping-cart.png"
-                    alt="shopping-cart" />
-            </div>
-        </section>
-    </header>
     <div class="home-container">
         <section id="home">
             <div class="content">
@@ -52,38 +15,37 @@
             </div>
         </section>
     </div>
-    <section class="about" id="about">
-        <h2 class="title">Sobre <span>Nós</span></h2>
-        <div class="row">
-            <div class="container-img">
-                <img src="{{ url_for('static', filename='img/sobrenos.png') }}" alt="buchada">
+    <section class="fundobranco">
+        <section class="about" id="about">
+            <h2 class="title">Sobre <span>Nós</span></h2>
+            <div class="row">
+                <div class="container-img">
+                    <img src="{{ url_for('static', filename='img/sobrenos.png') }}" alt="buchada">
+                </div>
+                <div class="content">
+                    <h3>O que faz nossa comida especial</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quasi voluptas, cupiditate
+                        fugiat
+                        harum maiores cumque ab non, porro repellendus nemo dolor ipsa velit totam amet accusantium
+                        deleniti! Temporibus, ducimus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magnam, tempora delectus odio
+                        rerum
+                        similique, laudantium eum excepturi ut quia error modi dicta atque ullam consectetur
+                        voluptatibus
+                        magni placeat! Odio.</p>
+                    <a href="#" class="btn btn-saiba-mais">Saiba mais</a>
+                </div>
             </div>
-            <div class="content">
-                <h3>O que faz nossa comida especial</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quasi voluptas, cupiditate
-                    fugiat
-                    harum maiores cumque ab non, porro repellendus nemo dolor ipsa velit totam amet accusantium
-                    deleniti! Temporibus, ducimus?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magnam, tempora delectus odio
-                    rerum
-                    similique, laudantium eum excepturi ut quia error modi dicta atque ullam consectetur
-                    voluptatibus
-                    magni placeat! Odio.</p>
-                <a href="#" class="btn btn-saiba-mais">Saiba mais</a>
+        </section>
+        <section class="menu" id="menu">
+            <h2 class="title">Nosso <span>Cardápio</span></h2>
+            <div class="box-container">
+                <div>
+                    <img src="" alt="">
+                    <h3></h3>
+                    <div></div>
+                </div>
             </div>
-        </div>
+        </section>
     </section>
-    <section class="menu" id="menu">
-        <h2 class="title">Nosso <span>Cardápio</span></h2>
-        <div class="box-container">
-            <div>
-                <img src="" alt="">
-                <h3></h3>
-                <div></div>
-            </div>
-        </div>
-    </section>
-
-</body>
-
-</html>
+{% endblock %}

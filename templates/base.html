@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon-32x32.png') }}" type="image/png">
+    
+        <title>Document</title>
+    </head>
         <!-- TEMPLATE BASE COM MENU, RODAPÉ, ETC. -->
 <body>
-    <div class="container">
-        <nav class="sidebar"> 
-            <div class="logo">
-                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" height="80">
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img height="90" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
+            </a>
+            <nav class="navbar">
+                <a href="{{ url_for('index') }}">Ínicio</a>
+                <a href="{{ url_for('sobre') }}">Sobre</a>
+                <a href="{{ url_for('cardapio') }}">Cardápio</a>
+                <a href="{{ url_for('avaliacao') }}">Avaliações</a>
+                <a href="{{ url_for('contato') }}">Endereço</a>
+            </nav>
+            <!-- <input class="pesquisatopo" type="text"> -->
+
+            <div class="icons">
+                <img width="20" height="20" src="https://img.icons8.com/ios-filled/20/ffffff/search--v2.png"
+                    alt="search--v2" />
+                <img width="20" height="20" src="https://img.icons8.com/material-rounded/20/ffffff/shopping-cart.png"
+                    alt="shopping-cart" />
             </div>
-            <ul class="menu">
-                <li><a href="{{ url_for('index') }}">Início</a></li>
-                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
-                <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
-                <li><a href="{{ url_for('galeria') }}">Galeria</a></li>
-                <li><a href="{{ url_for('contato') }}">Contato</a></li>
-            </ul>
-        </nav>
+        </section>
+    </header>
         <!-- CONTEÚDO PRINCIPAL -->
         <main class="conteudo">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed nesciunt recusandae, nulla veritatis dolorem optio incidunt vitae non temporibus iste modi alias suscipit perferendis ullam ratione exercitationem, quibusdam aut.</P>
+            {% block blockcontest %}
+
+            {% endblock %}
         </main>
     </div>
         <!-- RODAPÉ -->
