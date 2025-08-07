@@ -3,24 +3,36 @@
 {% block title %}inicio{% endblock %}
 
 {% block blockcontest %}
+<div class="back-fixo">
+
     <div class="home-container">
         <section id="home">
             <div class="content">
-                <h3>Sabor que escorrega na memória, delícias que derretem no paladar!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem iure nesciunt.
+
+                <h3 class="fade-in">Sabor que escorrega na memória, delícias que derretem no paladar!</h3>
+
+                <p class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem iure
+                    nesciunt.
                     Voluptatum optio unde esse at distinctio placeat nobis beatae officiis temporibus quibusdam,
                     praesentium tempore ad reprehenderit, quidem magnam?</p>
-                <a href="#" class="btn">Peça aqui!</a>
+
+                <a href="#" class="btn fade-in">Peça aqui!</a>
             </div>
         </section>
     </div>
-    <section class="fundobranco">
+
+
+    <div class="fundobranco">
+
         <section class="about" id="about">
+
             <h2 class="title">Sobre <span>Nós</span></h2>
             <div class="row">
+
                 <div class="container-img">
                     <img src="{{ url_for('static', filename='img/sobrenos.png') }}" alt="buchada">
                 </div>
+
                 <div class="content">
                     <h3>O que faz nossa comida especial</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quasi voluptas, cupiditate
@@ -32,10 +44,12 @@
                         similique, laudantium eum excepturi ut quia error modi dicta atque ullam consectetur
                         voluptatibus
                         magni placeat! Odio.</p>
-                    <a href="#" class="btn btn-saiba-mais">Saiba mais</a>
+
+                    <a href="{{ url_for('sobre') }}" class="btn btn-saiba-mais">Saiba mais</a>
                 </div>
             </div>
         </section>
+
         <section class="menu" id="menu">
             <h2 class="title">Nosso <span>Cardápio</span></h2>
             <div class="box-container">
@@ -46,5 +60,7 @@
                 </div>
             </div>
         </section>
-    </section>
+    </div>
+</div>
+
 {% endblock %}

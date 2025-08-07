@@ -1,19 +1,31 @@
+/* Variáveis*/
 :root {
     --bege: #d2b89c;
+    /* tom bege principal */
     --bege-outro-color: #b68e5e;
+    /* bege mais escuro */
     --bg: #f3e0d1;
+    /* fundo padrão da página */
     --border: 0.1rem solid var(--bege);
+    /* borda padrão */
     --black: #000;
+    /* preto */
     --branco: #fff;
+    /* branco */
     --accent-color: #005f8e;
+    /* cor de destaque */
     --texto-sobre-fundo: #2b1f0e;
+    /* cor texto sobre fundos escuros */
     font-size: 10px;
+    /* tamanho base para facilitar rem */
 }
 
+/* Scroll suave para toda a página */
 html {
     scroll-behavior: smooth;
 }
 
+/* Reset geral e tipografia padrão */
 *,
 *::before,
 *::after {
@@ -27,38 +39,40 @@ html {
     box-sizing: border-box;
 }
 
-.background-fixo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
-
+/* Cor base do fundo da página (caso imagem demore a carregar) */
 body {
-    position: relative;
+    background-color: var(--bg);
+}
+/* Imagem de fundo fixa */
+.back-fixo {
+    background: url("../img/fundo.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
 }
 
+/* Espaçamento e largura padrão para seções */
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
     z-index: 1;
+    /* garante que fique acima do fundo */
 }
 
+/* Cabeçalho fixo no topo, com efeito degrade para melhorar leitura */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
+    /* acima de tudo exceto o conteúdo principal */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
     backdrop-filter: blur(2px);
-   
+    /* desfoque leve no fundo */
 }
 
+/* Container interno do cabeçalho */
 .header section {
     display: flex;
     align-items: center;
@@ -70,6 +84,7 @@ section {
     z-index: 100;
 }
 
+/* Links do cabeçalho */
 .navbar a {
     margin: 0 1rem;
     font-size: 1.8rem;
@@ -78,6 +93,7 @@ section {
     outline: none;
 }
 
+/* Efeito hover e foco para links */
 .navbar a:hover,
 .navbar a:focus {
     border-bottom: 0.1rem solid var(--branco);
@@ -86,6 +102,7 @@ section {
     outline: none;
 }
 
+/* Ícone do cabeçalho */
 .icons img {
     margin: 1rem;
     cursor: pointer;
@@ -93,6 +110,7 @@ section {
     outline: none;
 }
 
+/* Animação ao passar mouse nos ícones */
 .icons img:hover {
     transform: scale(1.5);
 }
@@ -101,6 +119,7 @@ section {
     outline: none;
 }
 
+/* Botões */
 .btn {
     background-color: var(--accent-color);
     color: var(--branco);
@@ -116,40 +135,40 @@ section {
     outline: none;
 }
 
+/* Efeito hover e foco nos botões */
 .btn:hover,
 .btn:focus {
     filter: brightness(0.9);
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 95, 142, 0.5);
 }
-.fundobranco{
-    background-color: #fff;
-    box-shadow: #000 0 0 1;
 
-}
+/* Container da home */
 .home-container {
     position: relative;
     z-index: 1;
-    min-height: 100vh;
-    background: url("../img/fundo.jpg") no-repeat center center/cover;
+    height: 100rem;
+
 
 }
 
+/* Seção dentro do home-container */
 .home-container section {
     display: flex;
     align-items: center;
     height: 100vh;
     position: relative;
     z-index: 1;
-
 }
 
+/* Container do conteúdo textual */
 .content {
     max-width: 60rem;
     position: relative;
     z-index: 1;
 }
 
+/* Título principal da home */
 .content h3 {
     color: var(--bege);
     font-size: 5rem;
@@ -158,6 +177,7 @@ section {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
+/* Parágrafo da home */
 .content p {
     color: var(--branco);
     font-size: 2rem;
@@ -166,6 +186,30 @@ section {
     padding: 1rem 0;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.fundobranco {
+    background-color: var(--branco);
+    margin-top: -20rem;
+}
+
+/* Títulos das seções */
 .title {
     font-size: 4rem;
     color: var(--black);
@@ -174,29 +218,32 @@ section {
     margin-bottom: 3rem;
     position: relative;
     z-index: 1;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
 }
 
+/* span dentro do título */
 .title span {
     color: var(--bege);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 5px #000;
 }
 
+/* Layout da seção sobre nós */
 .about .row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #8B4513;
+    background-color: #8b4513;
     gap: 1.5rem;
     border-radius: 1rem;
     position: relative;
     z-index: 1;
 }
 
+/* Container para a imagem na seção about */
 .container-img {
-    flex: 2;
+    flex: 4;
 }
 
+/* Imagem seção about */
 .container-img img {
     width: 100%;
     height: auto;
@@ -204,56 +251,21 @@ section {
     border-radius: 1rem;
 }
 
+/* Container de texto na seção about */
 .about .content {
-    flex: 1;
-    padding: 1rem;
+    flex: 2;
+    padding: 1.5rem;
 }
 
+/* Título dentro da seção about */
 .row .content h3 {
     color: var(--bege);
     margin-bottom: 1rem;
     font-size: 3rem;
 }
 
+/* Parágrafos dentro da seção about */
 .row .content p {
     font-size: 1.4rem;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -1rem;
-}
-
-@media (max-width: 768px) {
-    .home-container section {
-        flex-direction: column;
-        justify-content: center;
-        padding: 20rem 2rem 4rem;
-        height: auto;
-        text-align: center;
-    }
-
-    .content h3 {
-        font-size: 3.2rem;
-        line-height: 1.3;
-    }
-
-    .content p {
-        font-size: 1.6rem;
-    }
-
-    .btn {
-        font-size: 1.6rem;
-        padding: 1rem 2.5rem;
-    }
-
-    .about .row {
-        flex-direction: column;
-    }
-
-    .btn-container {
-        justify-content: center;
-        margin-top: 1rem;
-    }
+    padding: 0.5rem 0;
 }
