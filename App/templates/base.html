@@ -17,7 +17,7 @@
         rel="stylesheet" />
 
     <!-- Ícone da aba do navegador -->
-    <link rel="icon" href="{{ url_for('static', filename='img/favicon-32x32.png') }}" type="image/png" />
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon-96x96.png') }}" type="image/png" />
 
     <title>{% block title %}Meu Site{% endblock %}</title>
 </head>
@@ -28,14 +28,14 @@
     <header class="header">
         <section>
             <a href="#" class="logo">
-                <img height="90" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
+                <img height="100" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
             </a>
             <nav class="navbar">
                 <a href="{{ url_for('main.index') }}">Ínicio</a>
-                <a href="#about">Sobre</a>
+                <a href="{{ url_for('main.sobre') }}">Sobre</a>
                 <a href="{{ url_for('main.cardapio') }}">Cardápio</a>
                 <a href="{{ url_for('main.avaliacao') }}">Avaliações</a>
-                <a href="#about">Endereço</a>
+                <a href="#">Endereço</a>
             </nav>
             <!-- Ícones para pesquisa e carrinho -->
             <div class="icons">

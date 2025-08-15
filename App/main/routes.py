@@ -11,7 +11,6 @@ def index():
     posts = current_app.posts
     return render_template("index.html", posts=posts)
 
-
 @main.route("/sobre")
 def sobre():
     return render_template("sobre.html")
@@ -27,6 +26,3 @@ def cardapio():
 @main.route("/base")
 def base():
     return render_template("base.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)

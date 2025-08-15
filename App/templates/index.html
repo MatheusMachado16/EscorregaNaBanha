@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}inicio{% endblock %}
+{% block title %}Escorrega na Banha{% endblock %}
 
 {% block blockcontest %}
 <div class="back-fixo">
@@ -16,7 +16,7 @@
                     Voluptatum optio unde esse at distinctio placeat nobis beatae officiis temporibus quibusdam,
                     praesentium tempore ad reprehenderit, quidem magnam?</p>
 
-                <a href="#" class="btn fade-in">Peça aqui!</a>
+                <a href="#menu" class="btn fade-in">Peça aqui!</a>
             </div>
         </section>
     </div>
@@ -52,15 +52,40 @@
 
         <section class="menu" id="menu">
             <h2 class="title">Nosso <span>Cardápio</span></h2>
+
             <div class="box-container">
-                <div>
-                    <img src="" alt="">
-                    <h3></h3>
-                    <div></div>
+                <div class="box">
+                    <img src="{{ url_for('static', filename='img/buchada.png') }}" alt="Buchada de Bode">
+                    <h3>Buchada de Bode</h3>
+                    <div class="price"> R$ 35,00</div>
+                </div>
+                <div class="box">
+                    <img src="{{ url_for('static', filename='img/Sarapatel.png') }}" alt="Sarapatel">
+                    <h3>Sarapatel</h3>
+                    <div class="price"> R$ 35,00</div>
+                </div>
+                <div class="box">
+                    <img src="{{ url_for('static', filename='img/moqueca.png') }}" alt="Moqueca de Peixe">
+                    <h3>Moqueca de Peixe</h3>
+                    <div class="price"> R$ 35,00</div>
+                </div>
+                <div class="box">
+                    <img src="{{ url_for('static', filename='img/cuscuz.png') }}" alt="Cuscuz Nordestino">
+                    <h3>Cuscuz Nordestino</h3>
+                    <div class="price"> R$ 35,00</div>
+                </div>
+                <div class="box">
+                    <img src="{{ url_for('static', filename='img/dobradinha.png') }}" alt="Dobradinha">
+                    <h3>Dobradinha</h3>
+                    <div class="price"> R$ 35,00</div>
+                </div>
+                <div class="box">
+                    <img src="{{ url_for('static', filename='img/iscas-de-peixe.png') }}" alt="Iscas de Peixe">
+                    <h3>Iscas de Peixe</h3>
+                    <div class="price"> R$ 35,00</div>
                 </div>
             </div>
+            <a href="{{ url_for('main.cardapio') }}" class="btn btn-ver-mais">Ver mais</a>
         </section>
     </div>
-</div>
-
-{% endblock %}
+    {% endblock %}

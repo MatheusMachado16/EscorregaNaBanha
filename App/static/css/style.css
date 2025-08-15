@@ -1,9 +1,9 @@
 /* Variáveis*/
 :root {
-    --bege: #d2b89c;
+    --bege: #b68e5e;
     /* tom bege principal */
-    --bege-outro-color: #b68e5e;
-    /* bege mais escuro */
+    --bege-outro-color: #d2b89c;
+    /* bege mais claro */
     --bg: #f3e0d1;
     /* fundo padrão da página */
     --border: 0.1rem solid var(--bege);
@@ -43,6 +43,7 @@ html {
 body {
     background-color: var(--bg);
 }
+
 /* Imagem de fundo fixa */
 .back-fixo {
     background: url("../img/fundo.jpg") no-repeat center center/cover;
@@ -98,7 +99,6 @@ section {
 .navbar a:focus {
     border-bottom: 0.1rem solid var(--branco);
     padding-bottom: 0.5rem;
-    font-size: 2.2rem;
     outline: none;
 }
 
@@ -107,7 +107,6 @@ section {
     margin: 1rem;
     cursor: pointer;
     will-change: transform;
-    outline: none;
 }
 
 /* Animação ao passar mouse nos ícones */
@@ -115,9 +114,6 @@ section {
     transform: scale(1.5);
 }
 
-.icons img:focus {
-    outline: none;
-}
 
 /* Botões */
 .btn {
@@ -162,10 +158,11 @@ section {
 }
 
 /* Container do conteúdo textual */
-.content {
+.home-container .content {
     max-width: 60rem;
     position: relative;
     z-index: 1;
+    margin-top: 5rem;
 }
 
 /* Título principal da home */
@@ -174,7 +171,7 @@ section {
     font-size: 5rem;
     text-transform: uppercase;
     line-height: 1.1;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 /* Parágrafo da home */
@@ -206,8 +203,9 @@ section {
 
 .fundobranco {
     background-color: var(--branco);
-    
+
 }
+
 
 /* Títulos das seções */
 .title {
@@ -223,7 +221,7 @@ section {
 /* span dentro do título */
 .title span {
     color: var(--bege);
-    text-shadow: 2px 2px 5px #000;
+
 }
 
 /* Layout da seção sobre nós */
@@ -240,13 +238,12 @@ section {
 
 /* Container para a imagem na seção about */
 .container-img {
-    flex: 4;
+    flex: 3;
 }
 
 /* Imagem seção about */
 .container-img img {
     width: 100%;
-    height: auto;
     display: block;
     border-radius: 1rem;
 }
@@ -259,13 +256,56 @@ section {
 
 /* Título dentro da seção about */
 .row .content h3 {
-    color: var(--bege);
+    text-align: center;
+    color: var(--bege-outro-color);
     margin-bottom: 1rem;
     font-size: 3rem;
 }
 
 /* Parágrafos dentro da seção about */
 .row .content p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 3rem 0;
+    cursor: pointer;
+}
+
+.menu .box-container .box img {
+    height: 15rem;
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.menu .box-container .box h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding: 1rem 0;
+
+}
+
+.menu .box-container .box .price {
+    color: var(--black);
+    font-size: 1.5rem;
     padding: 0.5rem 0;
 }
+
+.menu .box-container .box:hover{
+    background-color: #8b4513;
+}
+
+.menu .box-container .box:hover>*{
+    color: var(--bege-outro-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
