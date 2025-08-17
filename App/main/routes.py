@@ -1,11 +1,6 @@
 from flask import render_template, current_app, Flask, request, session
 from . import main
 
-# @main.route('/')
-# def index():
-#     posts = current_app.posts
-#     return render_template('index.html', posts=posts)
-
 @main.route("/")
 def index():
     posts = current_app.posts

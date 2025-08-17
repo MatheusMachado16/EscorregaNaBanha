@@ -225,38 +225,38 @@ section {
 }
 
 /* Layout da seção sobre nós */
+
 .about .row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-color: #8b4513;
     gap: 1.5rem;
-    border-radius: 1rem;
-    position: relative;
-    z-index: 1;
+    border-radius: 3rem;
+
 }
 
 /* Container para a imagem na seção about */
 .container-img {
-    flex: 3;
+    flex: 2;
+    padding: 2rem;
 }
 
 /* Imagem seção about */
 .container-img img {
     width: 100%;
     display: block;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 /* Container de texto na seção about */
 .about .content {
-    flex: 2;
-    padding: 1.5rem;
+    flex: 1;
+    padding: 1rem 1rem;
 }
 
 /* Título dentro da seção about */
 .row .content h3 {
-    text-align: center;
     color: var(--bege-outro-color);
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -265,8 +265,8 @@ section {
 /* Parágrafos dentro da seção about */
 .row .content p {
     font-size: 1.5rem;
-    padding: 1rem 0;
 }
+
 
 .menu .box-container {
     display: grid;
@@ -307,5 +307,33 @@ section {
 .menu .box-container .box:hover>*{
     color: var(--bege-outro-color);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.avaliacao .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 3rem;
+}
+
+.avaliacao .row .container-img,
+.formulario {
+  flex: 1; 
+}
+
+.avaliacao .row .container-img img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+  
+}
+
+.formulario {
+    width: 100%;
+    height: 50rem;
+    background: #8b4513;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
