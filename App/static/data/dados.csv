@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block title %}Cardápio{% endblock %}
+
+{% block blockcontest %}
+
+<h1>🍽️ Cardápio</h1>
+
+<div class="cardapio">
+    <div class="pratosprincipais">
+        <h2>pratos principais</h2>
+        <div class="item">
+            <img src="" alt="Baião de Dois">
+            <h3>Baião de Dois</h3>
+            <p>Arroz com feijão verde ou macassa, carne seca e queijo coalho</p>
+            <div class="preco">R$ 25,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Buchada de Bode">
+            <h3>Buchada de Bode</h3>
+            <p>	Miúdos de bode cozidos com temperos típicos</p>
+            <div class="preco">R$ 35,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+            <div class="preco"></div>
+        </div>
+        <div class="item">
+            <img src="" alt="Carne de Sol com Macaxeira">
+            <h3>Carne de Sol com Macaxeira</h3>
+            <p>Carne de sol frita, acompanhada de macaxeira (aipim)</p>
+            <div class="preco">R$ 30,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Sarapatel">
+            <h3>Sarapatel</h3>
+            <p>	Miúdos de porco cozidos no próprio sangue com pimenta</p>
+            <div class="preco">R$ 28,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Vatapá">
+            <h3>Vatapá</h3>
+            <p>Creme de pão, camarão seco, leite de coco e azeite de dendê</p>
+            <div class="preco">R$ 22,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Moqueca de Peixe">
+            <h3>Moqueca de Peixe</h3>
+            <p>Peixe cozido com pimentões, tomate e leite de coco</p>
+            <div class="preco">R$ 38,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Cuscuz Nordestino">
+            <h3>Cuscuz Nordestino</h3>
+            <p>Flocos de milho cozidos no vapor, com manteiga, ovos ou carne</p>
+            <div class="preco">R$ 12,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Feijão Verde com Queijo Coalho">
+            <h3>Feijão Verde com Queijo Coalho</h3>
+            <p>Feijão refogado com temperos e queijo coalho por cima</p>
+            <div class="preco">R$ 18,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Dobradinha">
+            <h3>Dobradinha</h3>
+            <p>Dobrada de boi com feijão branco e temperos</p>
+            <div class="preco">R$ 26,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Peixada Nordestina">
+            <h3>Peixada Nordestina</h3>
+            <p>	Caldo grosso de peixe com legumes</p>
+            <div class="preco">R$ 36,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Tapioca recheada">
+            <h3>Tapioca recheada</h3>
+            <p>Tapioca com queijo coalho, coco ou doce de leite</p>
+            <div class="preco">R$ 10,00</div>
+        </div>
+        <div class="item">
+            <img src="" alt="Pé de Moleque">
+            <h3>Pé de Moleque</h3>
+            <p>Doce de amendoim com rapadura ou açúcar mascavo</p>
+            <div class="preco">R$ 6,00</div>
+        </div>
+        <br>
+    </div>
+    <div class="porcoes">
+        <h2>porcões</h2>
+        <div class="item">
+            <img src="" alt="Porção de Carne de Sol">
+            <h3>Porção de Carne de Sol</h3>
+            <p>Tiras de carne de sol frita acompanhadas de vinagrete e macaxeira frita</p>
+            <div class="preco">R$ 40,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Queijo Coalho">
+            <h3>Porção de Queijo Coalho</h3>
+            <p>Queijo coalho grelhado, servido com melaço ou pimenta</p>
+            <div class="preco">R$ 25,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Camarão Frito">
+            <h3>Porção de Camarão Frito</h3>
+            <p>Camarões fritos temperados, crocantes</p>
+            <div class="preco">R$ 45,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Aipim Frito">
+            <h3>Porção de Aipim Frito</h3>
+            <p>Mandioca frita crocante, servida com molho vinagrete</p>
+            <div class="preco">R$ 20,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Mandioca com Bacon">
+            <h3>Porção de Mandioca com Bacon</h3>
+            <p>Mandioca cozida com pedaços crocantes de bacon</p>
+            <div class="preco">R$ 30,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Sarapatel">
+            <h3>Porção de Sarapatel</h3>
+            <p>Porção menor do tradicional sarapatel nordestino</p>
+            <div class="preco">R$ 35,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Bolinho de Macaxeira">
+            <h3>Porção de Bolinho de Macaxeira</h3>
+            <p>Bolinhos fritos feitos com mandioca e recheio de carne ou queijo</p>
+            <div class="preco">R$ 28,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Torresmo">
+            <h3>Porção de Torresmo</h3>
+            <p>Torresmo crocante, petisco típico brasileiro</p>
+            <div class="preco">R$ 22,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Peixe Frito">
+            <h3>Porção de Peixe Frito</h3>
+            <p>Postas de peixe frito, servidas com limão e molho</p>
+            <div class="preco">R$ 38,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Porção de Dadinho de Tapioca">
+            <h3>Porção de Dadinho de Tapioca</h3>
+            <p>Dadinhos crocantes de tapioca com queijo coalho</p>
+            <div class="preco">R$ 26,00</div>
+        </div>
+        <br>
+    </div>
+    <div class="bebidas">
+        <h2>bebidas</h2>
+        <div class="item">
+            <img src="" alt="Cajuína">
+            <h3>Cajuína</h3>
+            <p>Refrigerante natural feito do suco de caju, típico do Ceará.</p>
+            <div class="preco">R$ 8,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Guaraná Jesus">
+            <h3>Guaraná Jesus</h3>
+            <p>Refrigerante rosado, doce e marcante, originário do Maranhão.</p>
+            <div class="preco">R$ 7,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Caldo de Cana">
+            <h3>Caldo de Cana</h3>
+            <p>Suco fresco da cana-de-açúcar, muito consumido em todo Nordeste.</p>
+            <div class="preco">R$ 5,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Vinho de Caju">
+            <h3>Vinho de Caju</h3>
+            <p>Bebida fermentada feita a partir do caju, típica da região.</p>
+            <div class="preco">R$ 12,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Licor de Umbu">
+            <h3>Licor de Umbu</h3>
+            <p>Licor artesanal feito da fruta umbu, muito popular no sertão.</p>
+            <div class="preco">R$ 15,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Café Nordestino">
+            <h3>Café Nordestino</h3>
+            <p>Café forte e aromático, tradicional nas mesas nordestinas.</p>
+            <div class="preco">R$ 4,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Chá de Maracujá">
+            <h3>Chá de Maracujá</h3>
+            <p>Infusão relaxante feita com a flor e fruto do maracujá.</p>
+            <div class="preco">R$ 6,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Suco de Umbu">
+            <h3>Suco de Umbu</h3>
+            <p>Suco refrescante feito da fruta umbu, muito consumida no Nordeste.</p>
+            <div class="preco">R$ 7,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Cachaça Artesanal">
+            <h3>Cachaça Artesanal</h3>
+            <p>Bebida alcoólica típica feita da cana-de-açúcar.</p>
+            <div class="preco">R$ 20,00</div>
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Água de Coco">
+            <h3>Água de Coco</h3>
+            <p>Água fresca retirada do coco verde, muito popular na região.</p>
+            <div class="preco">R$ 6,00</div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
