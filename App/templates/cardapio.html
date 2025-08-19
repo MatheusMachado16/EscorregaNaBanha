@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 
 {% block blockcontest %}
+<div class="cardapio">
+<h2>Pratos Principais</h2>
 <ul>
-    {% for produto in produtos %}
+    {% for produto in pratos %}
     <li>
         <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
         <strong>{{ produto.nome }}</strong> - R$ {{ produto.preco }}
@@ -10,4 +12,25 @@
     </li>
     {% endfor %}
 </ul>
+<h2>porcoes</h2>
+<ul>
+    {% for produto in porcoes %}
+    <li>
+        <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
+        <strong>{{ produto.nome }}</strong> - R$ {{ produto.preco }}
+        <small>{{ produto.descricao }}</small>
+    </li>
+    {% endfor %}
+</ul>
+<h2>bebidas</h2>
+<ul>
+    {% for produto in bebidas %}
+    <li>
+        <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
+        <strong>{{ produto.nome }}</strong> - R$ {{ produto.preco }}
+        <small>{{ produto.descricao }}</small>
+    </li>
+    {% endfor %}
+</ul>
+</div>
 {% endblock %}

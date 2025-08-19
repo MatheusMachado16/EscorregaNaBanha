@@ -31,8 +31,9 @@ def carregar_produtos():
     with open(caminho_csv, newline='', encoding='utf-8') as f:
         linhas = f.readlines()
         for linha in linhas[1:]:  # pula o cabeçalho
-            nome, descricao, foto, preco = linha.strip().split(',')
+            categoria, nome, descricao, foto, preco = linha.strip().split(',')
             produtos.append({
+                'categoria': categoria,
                 'nome': nome,
                 'descricao': descricao,
                 'foto': foto,
@@ -43,7 +44,10 @@ def carregar_produtos():
 @main.route("/cardapio")
 def cardapio():
     produtos = carregar_produtos()
-    return render_template("cardapio.html", produtos=produtos)
+    pratos = [p for p in produtos if p['categoria'] == 'prato']
+    porcoes = [p for p in produtos if p['categoria'] == 'porcao']
+    bebidas = [p for p in produtos if p['categoria'] == 'bebida']
+    return render_template("cardapio.html", pratos=pratos, bebidas=bebidas, porcoes=porcoes)
 
 # @main.route("/base")
 # def base():
