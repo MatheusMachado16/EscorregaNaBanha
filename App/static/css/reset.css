@@ -1,0 +1,33 @@
+/* Reset geral e tipografia padrão */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Scroll suave para toda a página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cor base do fundo da página (caso imagem demore a carregar) */
+body {
+    background-color: var(--bg);
+}
+
+/* Espaçamento e largura padrão para seções */
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+    /* garante que fique acima do fundo */
+}

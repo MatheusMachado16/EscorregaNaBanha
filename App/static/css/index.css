@@ -1,0 +1,233 @@
+@import url('reset.css');
+@import url('variables.css');
+@import url('header.css');
+@import url('footer.css');
+
+/* Imagem de fundo fixa */
+.back-fixo {
+    background: url("../img/fundo.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/* Botões */
+.btn {
+    background-color: var(--accent-color);
+    color: var(--branco);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.4rem;
+    user-select: none;
+    box-shadow: 0 3px 6px rgba(0, 95, 142, 0.4);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Efeito hover e foco nos botões */
+.btn:hover,
+.btn:focus {
+    filter: brightness(0.9);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 95, 142, 0.5);
+}
+
+/* Container da home */
+.home-container {
+    position: relative;
+    z-index: 1;
+    height: 100rem;
+}
+
+/* Seção dentro do home-container */
+.home-container section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+/* Container do conteúdo textual */
+.home-container .content {
+    max-width: 60rem;
+    position: relative;
+    z-index: 1;
+    margin-top: 5rem;
+}
+
+/* Título principal da home */
+.content h3 {
+    color: var(--bege);
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+/* Parágrafo da home */
+.content p {
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.fundobranco {
+    background-color: var(--branco);
+
+}
+
+/* Títulos das seções */
+.title {
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* span dentro do título */
+.title span {
+    color: var(--bege);
+
+}
+
+/* Layout da seção sobre nós */
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #8b4513;
+    gap: 1.5rem;
+    border-radius: 3rem;
+
+}
+
+/* Container para a imagem na seção about */
+.container-img {
+    flex: 2;
+    padding: 2rem;
+}
+
+/* Imagem seção about */
+.container-img img {
+    width: 100%;
+    display: block;
+    border-radius: 2rem;
+}
+
+/* Container de texto na seção about */
+.about .content {
+    flex: 1;
+    padding: 1rem 1rem;
+}
+
+/* Título dentro da seção about */
+.row .content h3 {
+    color: var(--bege-outro-color);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+/* Parágrafos dentro da seção about */
+.row .content p {
+    font-size: 1.5rem;
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 3rem 0;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.menu .box-container .box img {
+    height: 15rem;
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.menu .box-container .box h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding: 1rem 0;
+
+}
+
+.menu .box-container .box .price {
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box:hover{
+    background-color: #8b4513;
+    transform: translateY(-0.5rem);
+}
+
+.menu .box-container .box:hover>*{
+    color: var(--bege-outro-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    
+}
+
+.avaliacao .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 3rem;
+}
+
+.avaliacao .row .container-img,
+.formulario {
+  flex: 1; 
+}
+
+.avaliacao .row .container-img img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+  
+}
+
+.formulario {
+    width: 100%;
+    height: 50rem;
+    background: #8b4513;
+    padding: 2rem;
+    border-radius: 1rem;
+}

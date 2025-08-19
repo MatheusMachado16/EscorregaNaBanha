@@ -1,0 +1,21 @@
+/* Variáveis*/
+:root {
+    --bege: #b68e5e;
+    /* tom bege principal */
+    --bege-outro-color: #d2b89c;
+    /* bege mais claro */
+    --bg: #f3e0d1;
+    /* fundo padrão da página */
+    --border: 0.1rem solid var(--bege);
+    /* borda padrão */
+    --black: #000;
+    /* preto */
+    --branco: #fff;
+    /* branco */
+    --accent-color: #005f8e;
+    /* cor de destaque */
+    --texto-sobre-fundo: #2b1f0e;
+    /* cor texto sobre fundos escuros */
+    font-size: 10px;
+    /* tamanho base para facilitar rem */
+}

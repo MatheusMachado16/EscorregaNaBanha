@@ -1,0 +1,53 @@
+/* Cabeçalho fixo no topo, com efeito degrade para melhorar leitura */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    /* acima de tudo exceto o conteúdo principal */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(2px);
+    /* desfoque leve no fundo */
+}
+
+/* Container interno do cabeçalho */
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 100;
+}
+
+/* Links do cabeçalho */
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--branco);
+    cursor: pointer;
+    outline: none;
+}
+
+/* Efeito hover e foco para links */
+.navbar a:hover,
+.navbar a:focus {
+    border-bottom: 0.1rem solid var(--branco);
+    padding-bottom: 0.5rem;
+    outline: none;
+}
+
+/* Ícone do cabeçalho */
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+    will-change: transform;
+}
+
+/* Animação ao passar mouse nos ícones */
+.icons img:hover {
+    transform: scale(1.5);
+}

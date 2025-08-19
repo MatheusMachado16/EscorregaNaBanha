@@ -8,6 +8,9 @@
     <!-- Link para o arquivo CSS principal -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 
+    <!-- Bloco para CSS de cada página -->
+    {% block styles %}{% endblock %}
+
     <!-- Otimização para carregar fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

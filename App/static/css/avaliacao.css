@@ -1,0 +1,10 @@
+@import url('reset.css');
+@import url('variables.css');
+@import url('header.css');
+@import url('footer.css');
+
+.teste {
+    margin: 200px 100px 100px 100px;
+    font-size: 2rem;
+
+}

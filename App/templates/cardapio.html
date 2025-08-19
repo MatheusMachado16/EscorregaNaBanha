@@ -1,36 +1,58 @@
 {% extends 'base.html' %}
 
+{% block title %}Cardápio{% endblock %}
+
+{% block styles%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/cardapio.css') }}" />
+{% endblock %}
+
 {% block blockcontest %}
-<div class="cardapio">
-<h2>Pratos Principais</h2>
-<ul>
-    {% for produto in pratos %}
-    <li>
-        <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
-        <strong>{{ produto.nome }}</strong> - R$ {{ produto.preco }}
-        <small>{{ produto.descricao }}</small>
-    </li>
-    {% endfor %}
-</ul>
-<h2>porcoes</h2>
-<ul>
-    {% for produto in porcoes %}
-    <li>
-        <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
-        <strong>{{ produto.nome }}</strong> - R$ {{ produto.preco }}
-        <small>{{ produto.descricao }}</small>
-    </li>
-    {% endfor %}
-</ul>
-<h2>bebidas</h2>
-<ul>
-    {% for produto in bebidas %}
-    <li>
-        <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
-        <strong>{{ produto.nome }}</strong> - R$ {{ produto.preco }}
-        <small>{{ produto.descricao }}</small>
-    </li>
-    {% endfor %}
-</ul>
+<div class="menu">
+    <section class="section-menu">
+        <h3 class="title">Nosso <span>Cardápio</span></h3>
+        <div class="container">
+            <h2>Pratos Principais</h2>
+            <div class="box-container">
+                {% for produto in pratos %}
+                <div class="box">
+                    <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
+                    <h3>{{ produto.nome }}</h3>
+                    <div class="price">R$ {{ produto.preco }}</div>
+                    <p>{{ produto.descricao }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="container">
+            <h2>Porções</h2>
+            <div class="box-container">
+
+                {% for produto in porcoes %}
+                <div class="box">
+                    <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
+                    <h3>{{ produto.nome }}</h3>
+                    <div class="price">R$ {{ produto.preco }}</div>
+                    <p>{{ produto.descricao }}</p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="container">
+            <h2>Bebidas</h2>
+            <div class="box-container">
+
+                {% for produto in bebidas %}
+                <div class="box">
+                    <img src="{{ produto.foto }}" alt="{{ produto.nome}}">
+                    <h3>{{ produto.nome }}</h3>
+                    <div class="price">R$ {{ produto.preco }}</div>
+                    <p>{{ produto.descricao }}</p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
 </div>
 {% endblock %}
