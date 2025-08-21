@@ -11,20 +11,19 @@
 <div class="avaliacao">
     <h1>Avaliações</h1>
 
-{% for post in posts %}
-<div class="caixa">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.content }}</p>
-    <!-- <small>{{ post.email }}</small> -->
-    <time></time>
-    
-</div>
-{% else %}
+    {% for post in posts %}
+    <div class="caixa">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <!-- <small>{{ post.email }}</small> -->
+        <time>{{ post.data }}</time>
+    </div>
+    {% else %}
 
     <p>Nenhuma avaliacao</p>
 
-{% endfor %}
-<br>
-<a class="btn" href="{{ url_for('main.index') }}">voltar</a>
+    {% endfor %}
+    <br>
+    <a class="btn" href="{{ url_for('main.index') }}">voltar</a>
 </div>
 {% endblock %}

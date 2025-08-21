@@ -31,9 +31,9 @@
 
 }
 .avaliacao p {
-    color: var(--branco);
+    color: var(--black);
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.5;
     padding: 1rem 0;
 }
@@ -56,6 +56,7 @@
     padding-bottom: 2.5rem; /* 40px */
 
 }
+
 .avaliacao a { 
     margin-top: 1rem;
 }
