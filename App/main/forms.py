@@ -1,20 +1,24 @@
 from . import main
-from flask import render_template, current_app, request
+from flask import render_template, current_app, request, redirect, url_for
+from .models import Post
+from App import db
 
-@main.route("/")
+@main.route("/", methods=['GET', 'POST'])
 def index():
-    posts = current_app.posts
-    return render_template("index.html", posts=posts)
+    from App.main.models import Post 
+    if request.method == 'POST':
+        title = request.form['title']
+        email = request.form['email']
+        content = request.form['content']
+        novo_post = Post(title=title, email=email, content=content)
+        db.session.add(novo_post)
+        db.session.commit()
 
-notas = []
+        return redirect(url_for('main.avaliacao'))
+    return render_template("index.html")
+
+
 @main.route("/avaliacoes", methods=['GET', 'POST'])
 def avaliacao():
-    media = None
-    if request.method == 'POST':
-        try:
-            nota = float(request.form.get('nota1'))
-            notas.append(nota)
-            media = round(sum(notas)/len(notas), 2)
-        except ValueError:
-            media = 'Error: entradas inválidas'
-    return render_template('avaliacao.html', media=media)
+    posts = Post.query.all()
+    return render_template('avaliacao.html', posts=posts)

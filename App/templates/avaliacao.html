@@ -7,16 +7,24 @@
 {% endblock %}
 
 {% block blockcontest %}
-<div class="teste">
-    <form action="/avaliacoes" method="post">
-    digite a nota do prato: <input type="text" name="nota1"> <br>
-    <!-- digite a nota do restaurante: <input type="text" name="nota2"> <br> -->
-    <button type="submit">avaliar</button><br>
-    
-</form>
-{% if media is not none %}
-    media = {{ media }}
-{% endif %}
-</div>
 
+<div class="avaliacao">
+    <h1>Avaliações</h1>
+
+{% for post in posts %}
+<div class="caixa">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <!-- <small>{{ post.email }}</small> -->
+    <time></time>
+    
+</div>
+{% else %}
+
+    <p>Nenhuma avaliacao</p>
+
+{% endfor %}
+<br>
+<a class="btn" href="{{ url_for('main.index') }}">voltar</a>
+</div>
 {% endblock %}

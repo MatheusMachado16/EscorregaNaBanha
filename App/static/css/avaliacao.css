@@ -8,3 +8,61 @@
     font-size: 2rem;
 
 }
+.btn {
+    background-color: var(--accent-color);
+    color: var(--branco);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 0.4rem;
+    user-select: none;
+    box-shadow: 0 3px 6px rgba(0, 95, 142, 0.4);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+.avaliacao {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    max-width: 70rem; 
+    color: white;
+
+}
+.avaliacao p {
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+.avaliacao h2 {
+    color: var(--branco);
+    font-size: 3rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+.caixa {
+    background: #8b4513;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    margin-top: 1rem;
+    max-width: 70rem;   /* 672px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5rem;   /* 40px */
+    padding-bottom: 2.5rem; /* 40px */
+
+}
+.avaliacao a { 
+    margin-top: 1rem;
+}
+.avaliacao h1 {
+    color: black;
+    text-align: center;
+}
+.rodape {
+    text-align: center;
+}

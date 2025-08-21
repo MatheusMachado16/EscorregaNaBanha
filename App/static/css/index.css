@@ -59,7 +59,7 @@
 
 /* Título principal da home */
 .content h3 {
-    color: var(--bege);
+    color: #f3e0d1;;
     font-size: 5rem;
     text-transform: uppercase;
     line-height: 1.1;

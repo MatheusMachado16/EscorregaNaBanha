@@ -3,6 +3,7 @@ from . import main
 import csv
 import os
 
+
 def carregar_produtos():
     produtos = []
     caminho_csv = os.path.join(current_app.root_path, 'static', 'data', 'produtos.csv')

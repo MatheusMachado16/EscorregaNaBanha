@@ -93,7 +93,7 @@
         </section>
 
         <section class="avaliacao" id="avaliacao">
-            <h2 class="title">Nós <span>Avaliem</span></h2>
+            <h2 class="title">Nos <span>Avaliem</span></h2>
             <div class="row">
                 <div class="container-img">
                     <img src="{{ url_for('static', filename='img/avaliacao.png') }}" alt="buchada">
@@ -101,18 +101,19 @@
 
                 <div class="formulario">
                     
-                    <form action="/enviar" method="post">
+                    <form method="post">
                         <label for="nome">Nome:</label><br>
-                        <input type="text" id="nome" name="nome" required><br><br>
+                        <input type="text" id="nome" name="title" required><br><br>
 
                         <label for="email">E-mail:</label><br>
                         <input type="email" id="email" name="email" required><br><br>
 
                         <label for="mensagem">Mensagem:</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="4"></textarea><br><br>
+                        <textarea id="mensagem" name="content" rows="4"></textarea><br><br>
 
                         <button type="submit">Enviar</button>
-                    </form>
+                    </form> 
+                    <a  class="btn" href="{{ url_for('main.avaliacao') }}">ver avaliações</a>
                 </div>
             </div>
 
