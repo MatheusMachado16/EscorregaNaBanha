@@ -1,15 +1,17 @@
-/* Reset geral e tipografia padrão */
+/* Remove margens/paddings padrões */
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
+    transition: all 0.3s ease-in-out; /* Suavidade nas mundanças de estilo */
+    box-sizing: border-box; /*facilita cálculo de tamanhos no layout */
+}
+
+/* Define altura total para html e body */
+html,
+body {
+    height: 100%;
 }
 
 /* Scroll suave para toda a página */
@@ -17,9 +19,38 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Cor base do fundo da página (caso imagem demore a carregar) */
 body {
     background-color: var(--bg);
+}
+
+/* Listas sem estilos */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Links sem sublinhado azul */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagens não ultrapassam container */
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    
+}
+
+/* Inputs e botões herdam fonte do body */
+input,
+button,
+textarea,
+select {
+    font: inherit;
 }
 
 /* Espaçamento e largura padrão para seções */
@@ -29,5 +60,4 @@ section {
     max-width: 1000px;
     position: relative;
     z-index: 1;
-    /* garante que fique acima do fundo */
 }

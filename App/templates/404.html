@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>404 - Página não encontrada</title>
-<style>
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Página não encontrada</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+    }
 
-  h1 {
-    font-size: 8rem;
-    margin: 0;
-    animation: float 2s ease-in-out infinite;
-  }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-  p {
-    font-size: 1.3rem;
-    margin: 15px 0 25px;
-    color: #94a3b8;
-  }
+    .cont-img img {
+      height: 350px;
+      max-width: 100%;
+    }
 
-  a {
-    display: inline-block;
-    color: #38bdf8;
-    text-decoration: none;
-    padding: 12px 24px;
-    border: 2px solid #38bdf8;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
+    h1 {
+      font-size: 100px;
+      margin: 0;
+    }
 
-  a:hover {
-    background: #38bdf8;
-    color: #0f172a;
-    transform: scale(1.05);
-  }
+    p {
+      font-size: 20px;
+      margin: 15px 0 25px;
+    }
 
-  /* Animação suave no número */
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
+    /* Botão */
+    .btn {
+      background-color: #005f8e;
+      color: #fff;
+      padding: 1rem 3rem;
+      font-size: 1.7rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      display: inline-block;
+      border-radius: 0.4rem;
+      user-select: none;
+      box-shadow: 0 3px 6px rgba(0, 95, 142, 0.4);
+      transition: all 0.3s ease-in-out;
+      outline: none;
+      text-decoration: none;
+    }
 
-  /* Detalhe animado no fundo */
-  .bg-circle {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: rgba(56, 189, 248, 0.15);
-    border-radius: 50%;
-    filter: blur(80px);
-    animation: moveBg 10s ease-in-out infinite;
-  }
+    .btn:hover,
+    .btn:focus {
+      filter: brightness(0.9);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 95, 142, 0.5);
+    }
 
-  @keyframes moveBg {
-    0% { transform: translate(-100px, -100px); }
-    50% { transform: translate(100px, 100px); }
-    100% { transform: translate(-100px, -100px); }
-  }
-</style>
+    
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div class="bg-circle"></div>
-  <h1>404</h1>
-  <p>Ops! A página que você procura não existe.</p>
-  <a href="{{ url_for('main.index') }}">Voltar para a página inicial</a>
+  <div class="row">
+    <div class="cont-img">
+      <img src="{{ url_for('static', filename='img/avaliacao.png') }}" alt="">
+    </div>
+    <div class="cont">
+      <h1>404</h1>
+      <p>Ops! A página que você procura não existe.</p>
+      <a class="btn" href="{{ url_for('main.index') }}">Voltar para a página inicial</a>
+    </div>
+  </div>
+
 </body>
+
 </html>

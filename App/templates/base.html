@@ -11,14 +11,6 @@
     <!-- Bloco para CSS de cada página -->
     {% block styles %}{% endblock %}
 
-    <!-- Otimização para carregar fontes Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Fonte Roboto do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-
     <!-- Ícone da aba do navegador -->
     <link rel="icon" href="{{ url_for('static', filename='img/favicon-96x96.png') }}" type="image/png" />
 
@@ -34,10 +26,20 @@
                 <img height="100" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" />
             </a>
             <nav class="navbar">
-                <a href="{{ url_for('main.index') }}">Início</a>
-                <a href="{{ url_for('main.sobre') }}">Sobre</a>
-                <a href="{{ url_for('main.cardapio') }}">Cardápio</a>
-                <a href="{{ url_for('main.avaliacao') }}">Avaliações</a>
+                <ul>
+                    <li>
+                        <a href="{{ url_for('main.index') }}">Início</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.sobre') }}">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.cardapio') }}">Cardápio</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.avaliacao') }}">Avaliações</a>
+                    </li>
+                </ul>
             </nav>
 
             <!-- Ícones para pesquisa e carrinho -->

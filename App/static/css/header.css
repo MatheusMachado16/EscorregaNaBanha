@@ -23,6 +23,10 @@
     z-index: 100;
 }
 
+.navbar ul {
+    display: flex;
+}
+
 /* Links do cabeçalho */
 .navbar a {
     margin: 0 1rem;
