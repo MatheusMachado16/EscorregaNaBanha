@@ -9,7 +9,7 @@
 
 .title {
     font-size: 4rem;
-    color: var(--black);
+    color: var(--branco);
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -19,13 +19,13 @@
 
 /* span dentro do título */
 .title span {
-    color: var(--bege);
+    color: var(--destaque-color);
 
 }
 
 .container h2 {
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--bege);
     text-transform: uppercase;
     padding: 2rem 0;
 }
@@ -37,11 +37,13 @@
 }
 
 .section-menu .box-container .box {
+    background-color: var(--bg-sec);
     text-align: center;
     border: var(--border);
+    border-radius: 2rem;
     padding: 3rem 0;
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s;
 }
 
@@ -58,12 +60,6 @@
 
 }
 
-.section-menu .box-container .box p {
-    color: var(--black);
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-}
-
 .section-menu .box-container .box .price {
     color: var(--black);
     font-size: 1.5rem;
@@ -71,13 +67,20 @@
 
 }
 
+.section-menu .box-container .box p {
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+
 .section-menu .box-container .box:hover {
-    background-color: #8b4513;
+    background-color: #9C370D;
     transform: translateY(-0.5rem);
 }
 
 .section-menu .box-container .box:hover>* {
-    color: var(--bege-outro-color);
+    color: var(--branco);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 
 }

@@ -1,21 +1,17 @@
 /* Variáveis*/
 :root {
-    --bege: #b68e5e;
-    /* tom bege principal */
-    --bege-outro-color: #d2b89c;
-    /* bege mais claro */
-    --bg: #f3e0d1;
-    /* fundo padrão da página */
-    --border: 0.1rem solid var(--bege);
-    /* borda padrão */
-    --black: #000;
     /* preto */
-    --branco: #fff;
+    --black: #000;
     /* branco */
-    --accent-color: #005f8e;
-    /* cor de destaque */
-    --texto-sobre-fundo: #2b1f0e;
-    /* cor texto sobre fundos escuros */
+    --branco: #fff;
+    --bg: #0D0402;
+    /* borda padrão */
+    --border: 0.2rem solid #D9A566;
+    /* cor de destaque bortão*/
+    --destaque-color: #D90416;
+    /* bg sec */
+    --bg-sec: #f5f5f5;
+    --bege: #D9A566;
     font-size: 10px;
     /* tamanho base para facilitar rem */
 }

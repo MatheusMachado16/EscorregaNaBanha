@@ -11,7 +11,7 @@
 
 /* Botões */
 .btn {
-    background-color: var(--accent-color);
+    background-color: var(--destaque-color);
     color: var(--branco);
     padding: 1rem 3rem;
     font-size: 1.7rem;
@@ -20,7 +20,6 @@
     display: inline-block;
     border-radius: 0.4rem;
     user-select: none;
-    box-shadow: 0 3px 6px rgba(0, 95, 142, 0.4);
     transition: all 0.3s ease-in-out;
     outline: none;
 }
@@ -30,7 +29,7 @@
 .btn:focus {
     filter: brightness(0.9);
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 95, 142, 0.5);
+    box-shadow: 0 0 0 3px rgba(217, 4, 22, 0.5);
 }
 
 /* Container da home */
@@ -43,7 +42,6 @@
 /* Seção dentro do home-container */
 .home-container section {
     display: flex;
-    align-items: center;
     height: 100vh;
     position: relative;
     z-index: 1;
@@ -54,12 +52,12 @@
     max-width: 60rem;
     position: relative;
     z-index: 1;
-    margin-top: 5rem;
+    margin-top: 17rem;
 }
 
 /* Título principal da home */
-.content h3 {
-    color: #f3e0d1;;
+.home-container .content h3 {
+    color: var(--bege);
     font-size: 5rem;
     text-transform: uppercase;
     line-height: 1.1;
@@ -93,15 +91,15 @@
     animation-delay: 0.2s;
 }
 
-.fundobranco {
-    background-color: var(--branco);
+.fundo {
+    background-color: #0D0402;
 
 }
 
 /* Títulos das seções */
 .title {
     font-size: 4rem;
-    color: var(--black);
+    color: var(--branco);
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -111,7 +109,7 @@
 
 /* span dentro do título */
 .title span {
-    color: var(--bege);
+    color: var(--destaque-color);
 
 }
 
@@ -121,7 +119,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #8b4513;
+    background-color: var(--bg-sec);
     gap: 1.5rem;
     border-radius: 3rem;
 
@@ -148,13 +146,16 @@
 
 /* Título dentro da seção about */
 .row .content h3 {
-    color: var(--bege-outro-color);
+    color: var(--black);
     margin-bottom: 1rem;
     font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.1;
 }
 
 /* Parágrafos dentro da seção about */
 .row .content p {
+    color: var(--black);
     font-size: 1.5rem;
 }
 
@@ -166,11 +167,13 @@
 }
 
 .menu .box-container .box {
+    background-color: var(--bg-sec);
     text-align: center;
     border: var(--border);
+    border-radius: 2rem;
     padding: 3rem 0;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s;
 }
 
@@ -193,18 +196,19 @@
     padding: 0.5rem 0;
 }
 
-.menu .box-container .box:hover{
-    background-color: #8b4513;
+.menu .box-container .box:hover {
+    background-color: #9C370D;
     transform: translateY(-0.5rem);
 }
 
-.menu .box-container .box:hover>*{
-    color: var(--bege-outro-color);
+.menu .box-container .box:hover>* {
+    color: var(--branco);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-    
+
 }
 
 .avaliacao .row {
+    background: var(--bg-sec);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -214,20 +218,19 @@
 
 .avaliacao .row .container-img,
 .formulario {
-  flex: 1; 
+    flex: 1;
 }
 
 .avaliacao .row .container-img img {
-  width: 100%;
-  height: 50rem;
-  object-fit: cover;
-  
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+
 }
 
 .formulario {
     width: 100%;
     height: 50rem;
-    background: #8b4513;
     padding: 2rem;
     border-radius: 1rem;
 }
