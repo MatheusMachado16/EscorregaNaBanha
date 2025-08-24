@@ -1,33 +1,27 @@
 categoria,nome,descricao,foto,preco
-prato,Baião de Dois,Arroz com feijão verde ou macassa carne seca e queijo coalho,https://placehold.co/600x400?text=Baião+de+Dois,25
-prato,Buchada de Bode,Miúdos de bode cozidos com temperos típicos,https://placehold.co/600x400?text=Buchada+de+Bode,35
-prato,Carne de Sol com Macaxeira,Carne de sol frita acompanhada de macaxeira (aipim),https://placehold.co/600x400?text=Carne+de+Sol+com+Macaxeira,30
-prato,Sarapatel,Miúdos de porco cozidos no próprio sangue com pimenta,https://placehold.co/600x400?text=Sarapatel,28
-prato,Vatapá,Creme de pão camarão seco leite de coco e azeite de dendê,https://placehold.co/600x400?text=Vatapá,22
-prato,Moqueca de Peixe,Peixe cozido com pimentões tomate e leite de coco,https://placehold.co/600x400?text=Moqueca+de+Peixe,38
-prato,Cuscuz Nordestino,Flocos de milho cozidos no vapor com manteiga ovos ou carne,https://placehold.co/600x400?text=Cuscuz+Nordestino,12
-prato,Feijão Verde com Queijo Coalho,Feijão refogado com temperos e queijo coalho por cima,https://placehold.co/600x400?text=Feijão+Verde+com+Queijo+Coalho,18
-prato,Dobradinha,Dobrada de boi com feijão branco e temperos,https://placehold.co/600x400?text=Dobradinha,26
-prato,Peixada Nordestina,Caldo grosso de peixe com legumes,https://placehold.co/600x400?text=Peixada+Nordestina,36
-prato,Tapioca recheada,Tapioca com queijo coalho coco ou doce de leite,https://placehold.co/600x400?text=Tapioca+recheada,10
-prato,Pé de Moleque,Doce de amendoim com rapadura ou açúcar mascavo,https://placehold.co/600x400?text=Pé+de+Moleque,6
-bebida,Cajuína,Refrigerante natural feito do suco de caju típico do Ceará.,https://placehold.co/600x400?text=Cajuína,8
-bebida,Guaraná Jesus,Refrigerante rosado doce e marcante originário do Maranhão.,https://placehold.co/600x400?text=Guaraná+Jesus,7
-bebida,Caldo de Cana,Suco fresco da cana-de-açúcar muito consumido em todo Nordeste.,https://placehold.co/600x400?text=Caldo+de+Cana,5
-bebida,Vinho de Caju,Bebida fermentada feita a partir do caju típica da região.,https://placehold.co/600x400?text=Vinho+de+Caju,12
-bebida,Licor de Umbu,Licor artesanal feito da fruta umbu muito popular no sertão.,https://placehold.co/600x400?text=Licor+de+Umbu,15
-bebida,Café Nordestino,Café forte e aromático tradicional nas mesas nordestinas.,https://placehold.co/600x400?text=Café+Nordestino,4
-bebida,Chá de Maracujá,Infusão relaxante feita com a flor e fruto do maracujá.,https://placehold.co/600x400?text=Chá+de+Maracujá,6
-bebida,Suco de Umbu,Suco refrescante feito da fruta umbu muito consumida no Nordeste.,https://placehold.co/600x400?text=Suco+de+Umbu,7
-bebida,Cachaça Artesanal,Bebida alcoólica típica feita da cana-de-açúcar.,https://placehold.co/600x400?text=Cachaça+Artesanal,20
-bebida,Água de Coco,Água fresca retirada do coco verde muito popular na região.,https://placehold.co/600x400?text=Água+de+Coco,6
-porcao,Porção de Carne de Sol,Tiras de carne de sol frita acompanhadas de vinagrete e macaxeira frita,https://placehold.co/600x400?text=Porção+de+Carne+de+Sol,40
-porcao,Porção de Queijo Coalho,Queijo coalho grelhado servido com melaço ou pimenta,https://placehold.co/600x400?text=Porção+de+Queijo+Coalho,25
-porcao,Porção de Camarão Frito,Camarões fritos temperados crocantes,https://placehold.co/600x400?text=Porção+de+Camarão+Frito,45
-porcao,Porção de Aipim Frito,Mandioca frita crocante servida com molho vinagrete,https://placehold.co/600x400?text=Porção+de+Aipim+Frito,20
-porcao,Porção de Mandioca com Bacon,Mandioca cozida com pedaços crocantes de bacon,https://placehold.co/600x400?text=Porção+de+Mandioca+com+Bacon,30
-porcao,Porção de Sarapatel,Porção menor do tradicional sarapatel nordestino,https://placehold.co/600x400?text=Porção+de+Sarapatel,35
-porcao,Porção de Bolinho de Macaxeira,Bolinhos fritos feitos com mandioca e recheio de carne ou queijo,https://placehold.co/600x400?text=Porção+de+Bolinho+de+Macaxeira,28
-porcao,Porção de Torresmo,Torresmo crocante petisco típico brasileiro,https://placehold.co/600x400?text=Porção+de+Torresmo,22
-porcao,Porção de Peixe Frito,Postas de peixe frito servidas com limão e molho,https://placehold.co/600x400?text=Porção+de+Peixe+Frito,38
-porcao,Porção de Dadinho de Tapioca,Dadinhos crocantes de tapioca com queijo coalho,https://placehold.co/600x400?text=Porção+de+Dadinho+de+Tapioca,26
+prato,Baião de Dois,Arroz com feijão verde ou macassa carne seca e queijo coalho,https://www.sabornamesa.com.br/media/k2/items/cache/e62681383a22ece70ebf83908f7b7b5d_XL.jpg,25
+prato,Buchada de Bode,Miúdos de bode cozidos com temperos típicos,https://img.cybercook.com.br/publicidades/receita-de-buchada-de-bode.jpeg,35
+prato,Carne de Sol com Macaxeira,Carne de sol frita acompanhada de macaxeira (aipim),https://destinoparavencedores.com/wp-content/uploads/2024/10/Carne-de-sol-com-mandioca.jpg,30
+prato,Sarapatel,Miúdos de porco cozidos no próprio sangue com pimenta,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7ZJPNPMZmfxWZSwnhEjELyXYLvlbzKr_7g&s,28
+prato,Vatapá,Creme de pão camarão seco leite de coco e azeite de dendê,https://acozinhabrasileira.com.br/wp-content/uploads/2021/09/receita-de-vatapa.jpg,22
+prato,Moqueca de Peixe,Peixe cozido com pimentões tomate e leite de coco,https://www.sumerbol.com.br/uploads/images/2017/11/moqueca-de-peixe-590-1510656991.jpg,38
+prato,Cuscuz Nordestino,Flocos de milho cozidos no vapor com manteiga ovos ou carne,https://minhasreceitinhas.com.br/wp-content/uploads/2022/09/cuscuz-recheado-com-carne-de-sol.jpg,12
+prato,Feijão Verde com Queijo Coalho,Feijão refogado com temperos e queijo coalho por cima,https://s04.video.glbimg.com/x216/10315975.jpg,18
+prato,Dobradinha,Dobrada de boi com feijão branco e temperos,https://conteudo.imguol.com.br/c/entretenimento/eb/2021/03/11/mondongo-dobradinha-1615475532243_v2_4x3.jpg,26
+prato,Peixada Nordestina,Caldo grosso de peixe com legumes,https://www.minhareceita.com.br/app/uploads/2024/09/peixada-portal-minha-receita.webp,36
+prato,Tapioca recheada,Tapioca com queijo coalho coco ou doce de leite,https://www.estadao.com.br/resizer/5Zw-qnPCJ0_bAofF1naVCin0aKU=/arc-anglerfish-arc2-prod-estadao/public/QBHHRIQKYNE2PPSN32N2BASA4U.jpg,10
+prato,Pé de Moleque,Doce de amendoim com rapadura ou açúcar mascavo,https://www.sabornamesa.com.br/media/k2/items/cache/2f8923849b229fca56af812a1afc6abd_XL.jpg,6
+bebida,Cajuína,Refrigerante natural feito do suco de caju típico do Ceará.,https://cajuinasaogeraldo.com.br/wp-content/uploads/2024/05/cajuina-sao-geraldo-lata.jpg,8
+bebida,Guaraná Jesus,Refrigerante rosado doce e marcante originário do Maranhão.,https://revistazelo.com.br/wp-content/uploads/2024/06/guaranajesus-instagram-04153929851257.webp,7
+bebida,Caldo de Cana,Suco fresco da cana-de-açúcar muito consumido em todo Nordeste.,https://pastelariamariliadedirceu.com.br/wp-content/uploads/2023/09/Caldo-de-Cana.png,5
+bebida,Licor de Umbu,Licor artesanal feito da fruta umbu muito popular no sertão.,https://coopercuc.com.br/wp-content/uploads/2022/03/Prancheta-7-min.png,15
+bebida,Café Nordestino,Café forte e aromático tradicional nas mesas nordestinas.,https://applicativa-marketplace-prod.s3.amazonaws.com/blog/cafe-imagem-artigo.jpg,4
+bebida,Suco de Laranja,Suco refrescante feito da fruta.,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdXJ1wuzIxz7FZnRI8uXcGgTHQv3LdiWluQ&s,7
+bebida,Pitú,Bebida alcoólica típica feita da cana-de-açúcar.,https://lojapitu.vtexassets.com/arquivos/ids/155714/Pitu---350--1--1000x1279.png.png?v=638774690677070000,20
+bebida,Água de Coco,Água fresca retirada do coco verde muito popular na região.,https://radioterrafm.com.br/wp-content/uploads/2025/05/Materia-2.jpg,6
+porcao,Porção de Carne de Sol,Tiras de carne de sol frita acompanhadas de vinagrete e macaxeira frita,https://media-cdn.tripadvisor.com/media/photo-s/15/22/88/cf/carne-do-sol-com-vinagrete.jpg,40
+porcao,Porção de Camarão Frito,Camarões fritos temperados crocantes,https://static.itdg.com.br/images/360-240/81d0949c0a54b5732b4a0d63283527e3/267938-original.jpg,45
+porcao,Porção de Bolinho de Macaxeira,Bolinhos fritos feitos com mandioca e recheio de carne ou queijo,https://guiadacozinha.com.br/wp-content/uploads/2020/01/Bolinho-de-mandioca-cremoso.jpg,28
+porcao,Porção de Torresmo,Torresmo crocante petisco típico brasileiro,https://comidinhasdochef.com/wp-content/uploads/2019/01/Torresmo-de-Barriga.jpg,22
+porcao,Porção de Peixe Frito,Postas de peixe frito servidas com limão e molho,https://comidinhasdochef.com/wp-content/uploads/2019/01/Peixe-Empanado-com-Farinha-de-Trigo.jpg,38
+porcao,Porção de Dadinho de Tapioca,Dadinhos crocantes de tapioca com queijo coalho,https://guiadacozinha.com.br/wp-content/uploads/2017/11/dadinhos-de-tapioca.jpg,26
