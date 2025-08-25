@@ -8,8 +8,18 @@
     font-size: 2rem;
 
 }
+
+body{
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url(../img/image.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
 .btn {
-    background-color: var(--accent-color);
+    background-color: var(--destaque-color);
     color: var(--branco);
     padding: 1rem 3rem;
     font-size: 1.7rem;
@@ -18,36 +28,41 @@
     display: inline-block;
     border-radius: 0.4rem;
     user-select: none;
-    box-shadow: 0 3px 6px rgba(0, 95, 142, 0.4);
+    box-shadow: 0 3px 6px var(--destaque-color);
     transition: all 0.3s ease-in-out;
     outline: none;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 3px 6px var(--destaque-color);
 }
 .avaliacao {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15rem;
     max-width: 70rem; 
-    color: white;
+    color: var(--bege);
 
 }
 .avaliacao p {
-    color: var(--black);
+    color: var(--branco);
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.5;
     padding: 1rem 0;
 }
 .avaliacao h2 {
-    color: var(--branco);
-    font-size: 3rem;
+    color: var(--bege);
+    font-size: 2rem;
     line-height: 1.1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 .caixa {
-    background: #8b4513;
+    background: #2b2826;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6);
     margin-top: 1rem;
     max-width: 70rem;   /* 672px */
     margin-left: auto;
@@ -57,13 +72,23 @@
 
 }
 
+.caixa:hover{
+    transform: scale(1.05);
+}
+
 .avaliacao a { 
     margin-top: 1rem;
 }
 .avaliacao h1 {
-    color: black;
+    color: var(--bege);
     text-align: center;
 }
 .rodape {
     text-align: center;
+    color: white;
+    padding: 70px 0 50px 0;
+}
+.avaliacao .caixa .hora{
+    text-align: right;
+    display: block;
 }

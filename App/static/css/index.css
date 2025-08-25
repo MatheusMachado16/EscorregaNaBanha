@@ -197,13 +197,13 @@
 }
 
 .menu .box-container .box:hover {
-    background-color: #9C370D;
+    /* background-color: #9C370D; */
     transform: translateY(-0.5rem);
 }
 
 .menu .box-container .box:hover>* {
-    color: var(--branco);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    color: var(--bege);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.158);
 
 }
 
@@ -233,4 +233,9 @@
     height: 50rem;
     padding: 2rem;
     border-radius: 1rem;
+}
+.rodape {
+    text-align: center;
+    color: white;
+    padding: 70px 0 50px 0;
 }
