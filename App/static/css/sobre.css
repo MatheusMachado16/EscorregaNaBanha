@@ -2,8 +2,3 @@
 @import url('variables.css');
 @import url('header.css');
 @import url('footer.css');
-.rodape {
-    text-align: center;
-    color: white;
-    padding: 70px 0 50px 0;
-}

@@ -8,8 +8,8 @@
 
 {% block blockcontest %}
 
-<div class="avaliacao">
-    <h1>Avaliações</h1>
+<section class="avaliacao">
+    <h3 class="title">Nossas <span>Avaliações</span></h3>
 
     {% for post in posts %}
     <div class="caixa">
@@ -24,6 +24,7 @@
 
     {% endfor %}
     <br>
-    <a class="btn" href="{{ url_for('main.index') }}">voltar</a>
-</div>
+    <a class="btn" href="{{ url_for('main.index') }}">Voltar</a>
+</section>
+
 {% endblock %}

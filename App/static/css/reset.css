@@ -21,6 +21,7 @@ html {
 
 body {
     background-color: var(--bg);
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Listas sem estilos */
