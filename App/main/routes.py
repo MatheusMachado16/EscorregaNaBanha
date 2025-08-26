@@ -6,7 +6,8 @@ import os
 
 def carregar_produtos():
     produtos = []
-    caminho_csv = os.path.join(current_app.root_path, 'static', 'data', 'produtos.csv')
+    caminho_csv = os.path.join(current_app.root_path, 'App', 'static', 'data', 'produtos.csv')
+    # caminho_csv = os.path.join(current_app.root_path, 'static', 'data', 'produtos.csv')
     with open(caminho_csv, newline='', encoding='utf-8') as f:
         linhas = f.readlines()
         for linha in linhas[1:]:  # pula o cabeçalho
