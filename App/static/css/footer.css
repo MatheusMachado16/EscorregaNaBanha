@@ -4,3 +4,24 @@
     color: white;
     padding: 2rem;
 }
+
+@media (max-width: 1024px) {
+    .footer {
+        font-size: 1.4rem;
+        padding: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 1.3rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}

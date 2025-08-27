@@ -6,6 +6,12 @@
 body {
     background: url("../img/fundo-avaliacao.jpg") no-repeat center center/cover;
     background-attachment: fixed;  
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
 }
 
 .btn {
@@ -47,13 +53,18 @@ body {
 }
 
 .avaliacao {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 15rem;
     max-width: 70rem;
     color: var(--bege);
 
 }
+
+.avaliacao h2 {
+    color: var(--bege);
+    font-size: 2rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+} 
 
 .avaliacao p {
     color: var(--branco);
@@ -63,28 +74,14 @@ body {
     padding: 1rem 0;
 }
 
-.avaliacao h2 {
-    color: var(--bege);
-    font-size: 2rem;
-    line-height: 1.1;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-}
-
 .caixa {
     background: #2b2826;
     padding: 1.5rem;
     border-radius: 2rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6);
-    margin-top: 1rem;
-    max-width: 70rem;
     /* 672px */
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 2.5rem;
     /* 40px */
-    padding-bottom: 2.5rem;
-    /* 40px */
-
 }
 
 .caixa:hover {
@@ -93,11 +90,6 @@ body {
 
 .avaliacao a {
     margin-top: 1rem;
-}
-
-.avaliacao h1 {
-    color: var(--bege);
-    text-align: center;
 }
 
 .avaliacao .caixa .hora {

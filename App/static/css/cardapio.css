@@ -63,6 +63,7 @@
 .section-menu .box-container .box .price {
     color: var(--black);
     font-size: 1.5rem;
+    font-weight: 700;
     padding: 0.5rem 1rem;
 
 }
@@ -70,6 +71,7 @@
 .section-menu .box-container .box p {
     color: var(--black);
     font-size: 1.5rem;
+    font-weight: 700;
     padding: 0.5rem 1rem;
 }
 
@@ -84,3 +86,54 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.068);
 
 } */
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .section-menu .box-container {
+        gap: 2rem;
+    }
+
+    .section-menu .box-container .box h3 {
+        font-size: 1.8rem;
+    }
+
+    .section-menu .box-container .box .price,
+    .section-menu .box-container .box p {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-menu .box-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-menu .box-container .box h3 {
+        font-size: 1.6rem;
+    }
+
+    .section-menu .box-container .box .price,
+    .section-menu .box-container .box p {
+        font-size: 1.3rem;
+    }
+}

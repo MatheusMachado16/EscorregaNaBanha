@@ -65,7 +65,7 @@
 }
 
 /* Parágrafo da home */
-.content p {
+.home-container .content p {
     color: var(--branco);
     font-size: 2rem;
     font-weight: 100;
@@ -234,22 +234,103 @@
 }
 
 
-.avaliacao .row .formulario {
+.avaliacao .row .form-box {
     flex: 1;
 }
 
-.formulario {
+.form-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+
+}
+
+.form-box .title {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    border-bottom: thin solid #ccc;
+
+}
+
+.form-box form {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.form-box input,
+.form-box textarea {
+    width: calc(60%);
+    height: 4rem;
+    border-radius: 1rem;
+    border: thin solid #999;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.form-box textarea {
     width: 100%;
-    height: 50rem;
-    padding: 2rem;
+    height: 10rem;
+}
+
+.form-box button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 1rem;
+    color: var(--branco);
+    background-color: var(--black);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    transform: translateY(-0.5rem);
+}
+
+.alert {
+    width: calc(50%);
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    animation: fadeIn 0.5s;
+}
+
+.alert.success {
+    background-color: green;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
 }
 
 /* Media query para telas menores */
+
 @media (max-width: 768px) {
+    /* sessao home */
+    /* .home-container .content h3 {
+        font-size: 4.5rem;
+    }
+    .content p {
+        font-size: 1.5rem;
+    } */
+
     /* sessao about */
     .about .row {
         flex-direction: column;
-        /* empilha imagem e texto */
+
         text-align: center;
     }
 
@@ -261,19 +342,32 @@
         font-size: 1.2rem;
     }
 
-    .about .row .container-img img{
+    .about .row .container-img img {
         width: 80%;
-        /* imagem menor e centralizada */
+
     }
 
     /* sessao avaliação */
     .avaliacao .row {
         flex-direction: column;
-        /* empilha imagem e texto */
         text-align: center;
     }
+
     .avaliacao .row .container-img img {
-        width: 80%;
-        /* imagem menor e centralizada */
+        width: 60%;
+
     }
 }
+
+@media (max-width: 480px) {
+
+    /* sessao home */
+    .home-container .content h3 {
+        font-size: 3.8rem;
+    }
+
+    .home-container .content p {
+        font-size: 1.6rem;
+    }
+}
+

@@ -7,24 +7,24 @@
 {% endblock %}
 
 {% block blockcontest %}
+<main>
+    <section class="avaliacao">
+        <h3 class="title">Nossas <span>Avaliações</span></h3>
 
-<section class="avaliacao">
-    <h3 class="title">Nossas <span>Avaliações</span></h3>
+        {% for post in posts %}
+        <div class="caixa">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <!-- <small>{{ post.email }}</small> -->
+            <time class="hora">{{ post.data }}</time>
+        </div>
+        {% else %}
 
-    {% for post in posts %}
-    <div class="caixa">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.content }}</p>
-        <!-- <small>{{ post.email }}</small> -->
-        <time class="hora">{{ post.data }}</time>
-    </div>
-    {% else %}
+        <p>Nenhuma avaliação</p>
 
-    <p>Nenhuma avaliacao</p>
-
-    {% endfor %}
-    <br>
-    <a class="btn" href="{{ url_for('main.index') }}">Voltar</a>
-</section>
+        {% endfor %}
+        <a class="btn" href="{{ url_for('main.index') }}">Voltar</a>
+    </section>
+</main>
 
 {% endblock %}

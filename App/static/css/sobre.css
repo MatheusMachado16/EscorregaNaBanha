@@ -2,3 +2,12 @@
 @import url('variables.css');
 @import url('header.css');
 @import url('footer.css');
+
+body{
+     display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}

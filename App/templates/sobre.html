@@ -7,22 +7,29 @@
 {% endblock %}
 
 {% block blockcontest %}
+<main>
+    <section>
+    <div class="sobre">
+        <h1>Sobre o Escorrega na Banha</h1>
+        <p>O Escorrega na Banha é um restaurante dedicado a oferecer uma experiência única e divertida, combinando
+            pratos saborosos com um ambiente acolhedor e descontraído.</p>
 
-<div class="sobre">
-    <h1>Sobre o Escorrega na Banha</h1>
-    <p>O Escorrega na Banha é um restaurante dedicado a oferecer uma experiência única e divertida, combinando pratos saborosos com um ambiente acolhedor e descontraído.</p>
+        <h2>Nossa História</h2>
+        <p>Fundado em [ano], o restaurante nasceu da paixão por gastronomia e da vontade de criar um espaço onde amigos
+            e famílias pudessem se divertir e saborear pratos deliciosos.</p>
 
-    <h2>Nossa História</h2>
-    <p>Fundado em [ano], o restaurante nasceu da paixão por gastronomia e da vontade de criar um espaço onde amigos e famílias pudessem se divertir e saborear pratos deliciosos.</p>
+        <h2>Missão</h2>
+        <p>Proporcionar momentos inesquecíveis através de comida de qualidade, atendimento acolhedor e um ambiente
+            descontraído para todos os públicos.</p>
 
-    <h2>Missão</h2>
-    <p>Proporcionar momentos inesquecíveis através de comida de qualidade, atendimento acolhedor e um ambiente descontraído para todos os públicos.</p>
+        <h2>Contato</h2>
+        <p>Venha nos visitar ou entre em contato pelo telefone: (XX) XXXX-XXXX ou pelo e-mail:
+            contato@escelregnanabanha.com</p>
 
-    <h2>Contato</h2>
-    <p>Venha nos visitar ou entre em contato pelo telefone: (XX) XXXX-XXXX ou pelo e-mail: contato@escelregnanabanha.com</p>
-
-    <br>
-    <a class="btn" href="{{ url_for('main.index') }}">Voltar</a>
-</div>
+        <br>
+        <a class="btn" href="{{ url_for('main.index') }}">Voltar</a>
+    </div>
+    </section>
+</main>
 
 {% endblock %}

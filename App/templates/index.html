@@ -99,24 +99,37 @@
                     <img src="{{ url_for('static', filename='img/avaliacao.png') }}" alt="buchada">
                 </div>
 
-                <div class="formulario">
-                    
+                <div class="form-box">
+                    <h2 class="title-form">Faça a sua avaliação</h2>
+                    <div id="flash-container">
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                        {% for category, message in messages %}
+                        <div class="alert {{ category }}">
+                            {{ message }}
+                            <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                    </div>
                     <form method="post">
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" id="nome" name="title" required><br><br>
 
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" id="email" name="email" required><br><br>
+                        <input type="text" name="title" placeholder="Seu nome" required>
 
-                        <label for="mensagem">Mensagem:</label><br>
-                        <textarea id="mensagem" name="content" rows="4"></textarea><br><br>
 
-                        <button type="submit">Enviar</button>
-                    </form> 
-                    <a  class="btn" href="{{ url_for('main.avaliacao') }}">ver avaliações</a>
+                        <input type="email" name="email" placeholder="Seu email" required>
+
+
+                        <textarea name="comentario" placeholder="Digite seu comentário"></textarea>
+
+                        <button type="submit">Enviar Avaliação</button>
+                    </form>
                 </div>
             </div>
+            <a class="btn" href="{{ url_for('main.avaliacao') }}">Ver avaliações</a>
 
         </section>
     </div>
-    {% endblock %}
+</div>
+{% endblock %}
