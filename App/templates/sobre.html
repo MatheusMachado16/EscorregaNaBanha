@@ -8,27 +8,25 @@
 
 {% block blockcontest %}
 <main>
-    <section>
-    <div class="sobre">
-        <h1>Sobre o Escorrega na Banha</h1>
-        <p>O Escorrega na Banha é um restaurante dedicado a oferecer uma experiência única e divertida, combinando
-            pratos saborosos com um ambiente acolhedor e descontraído.</p>
+    <section class="about">
 
-        <h2>Nossa História</h2>
-        <p>Fundado em [ano], o restaurante nasceu da paixão por gastronomia e da vontade de criar um espaço onde amigos
-            e famílias pudessem se divertir e saborear pratos deliciosos.</p>
+        <h3 class="title">Sobre <span>Nós</span></h3>
+        <div class="row">
+            <div class="content">
+                <h2>O que faz nossa comida especial</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quasi voluptas, cupiditate
+                    fugiat
+                    harum maiores cumque ab non, porro repellendus nemo dolor ipsa velit totam amet accusantium
+                    deleniti! Temporibus, ducimus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magnam, tempora delectus odio
+                    rerum
+                    similique, laudantium eum excepturi ut quia error modi dicta atque ullam consectetur
+                    voluptatibus
+                    magni placeat! Odio.</p>
 
-        <h2>Missão</h2>
-        <p>Proporcionar momentos inesquecíveis através de comida de qualidade, atendimento acolhedor e um ambiente
-            descontraído para todos os públicos.</p>
-
-        <h2>Contato</h2>
-        <p>Venha nos visitar ou entre em contato pelo telefone: (XX) XXXX-XXXX ou pelo e-mail:
-            contato@escelregnanabanha.com</p>
-
-        <br>
-        <a class="btn" href="{{ url_for('main.index') }}">Voltar</a>
-    </div>
+                <a href="{{ url_for('main.sobre') }}" class="btn btn-saiba-mais">Saiba mais</a>
+            </div>
+        </div>
     </section>
 </main>
 

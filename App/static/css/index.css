@@ -294,7 +294,7 @@
 }
 
 .alert {
-    width: calc(50%);
+    width: 100%;
     padding: 1rem 1.5rem;
     margin-top: 1rem;
     border-radius: 1rem;
@@ -302,6 +302,7 @@
     color: white;
     font-weight: bold;
     animation: fadeIn 0.5s;
+    z-index: 100;
 }
 
 .alert.success {

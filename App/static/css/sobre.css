@@ -11,3 +11,53 @@ body{
 main{
     flex: 1;
 }
+
+/* Títulos das seções */
+.title {
+    font-size: 4rem;
+    color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* span dentro do título */
+.title span {
+    color: var(--destaque-color);
+
+}
+
+.about {
+    margin-top: 14rem;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-sec);
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    flex-wrap: wrap;
+}
+
+
+/* Título dentro da seção about */
+.about .row .content h2 {
+    font-size: 2.5rem;
+    color: var(--bege);
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+
+/* Parágrafos dentro da seção about */
+.about .row .content p {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}

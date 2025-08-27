@@ -7,6 +7,18 @@
 {% endblock %}
 
 {% block blockcontest %}
+<div id="flash-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert {{ category }}">
+        {{ message }}
+        <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
 <div class="back-fixo">
 
     <div class="home-container">
@@ -101,18 +113,7 @@
 
                 <div class="form-box">
                     <h2 class="title-form">Faça a sua avaliação</h2>
-                    <div id="flash-container">
-                        {% with messages = get_flashed_messages(with_categories=true) %}
-                        {% if messages %}
-                        {% for category, message in messages %}
-                        <div class="alert {{ category }}">
-                            {{ message }}
-                            <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
-                        </div>
-                        {% endfor %}
-                        {% endif %}
-                        {% endwith %}
-                    </div>
+
                     <form method="post">
 
                         <input type="text" name="title" placeholder="Seu nome" required>
