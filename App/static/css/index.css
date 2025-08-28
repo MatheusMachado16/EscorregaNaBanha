@@ -248,6 +248,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 2rem;
+    gap: 10px;
 
 }
 
@@ -258,11 +259,9 @@
 
 }
 
-.form-box form {
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    padding: 3rem;
+.form-box form button {
+  flex-basis: 100%; /* força o botão a ocupar toda a largura da linha */
+  margin: 1rem 0 1rem 0;
 }
 
 .form-box input,
@@ -274,10 +273,26 @@
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.estrela-select {
+  display: flex;
+  align-items: center;  /* Alinha verticalmente */
+  gap: 0.5rem;           /* Espaço entre SVG e select */
 }
 
+.estrela-select svg {
+    flex-shrink: 0;      /* Garante que o SVG não deforme */
+}
+
+.estrela-select select {
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+
+}
 .form-box textarea {
-    width: 100%;
+    width: 90%;
     height: 10rem;
 }
 
