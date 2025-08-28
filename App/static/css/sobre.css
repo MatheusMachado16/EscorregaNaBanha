@@ -3,11 +3,18 @@
 @import url('header.css');
 @import url('footer.css');
 
+body {
+    display: flex;
+    flex-direction: column;
+}
 
-main{
+main {
     flex: 1;
 }
 
+.about {
+    margin-top: 14rem;
+}
 .btn {
     background-color: var(--destaque-color);
     color: var(--branco);
@@ -46,20 +53,26 @@ main{
 
 }
 
-.avaliacao {
-    margin-top: 15rem;
-    max-width: 70rem;
-    color: var(--bege);
-
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2826;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    flex-wrap: wrap; 
 }
 
-h2 {
+.about .row .content h2 {
+    font-size: 2.5rem;
     color: var(--bege);
-    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
     line-height: 1.1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-} 
-p {
+}
+.about .row .content p {
     color: var(--branco);
     font-size: 2rem;
     font-weight: 300;
@@ -67,26 +80,6 @@ p {
     padding: 1rem 0;
 }
 
-.caixa {
-    background: #2b2826;
-    padding: 1.5rem ;
-    border-radius: 2rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6);
-    /* 672px */
-    padding-top: 2.5rem;
-    /* 40px */
-    margin-bottom: 2rem;
-}
-
-/* .caixa:hover {
-    transform: scale(1.05);
-} */
-
-.avaliacao a {
-    margin-top: 1rem;
-}
-
-
-.footer{
+.footer {
     background-color: var(--bg);
 }

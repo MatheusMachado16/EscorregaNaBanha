@@ -283,15 +283,23 @@
 
 .estrela-select svg {
     flex-shrink: 0;      /* Garante que o SVG não deforme */
+<<<<<<< HEAD
     height: 30px;
     width: 30px;
+=======
+>>>>>>> 5d8583f2508362d4da490b64f6221eec56191fd7
 }
 
 .estrela-select select {
     font-size: 1rem;
+<<<<<<< HEAD
     padding: 0.5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
+=======
+    padding: 0.3rem;
+    border-radius: 1rem;
+>>>>>>> 5d8583f2508362d4da490b64f6221eec56191fd7
 
 }
 .form-box textarea {
