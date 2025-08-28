@@ -10,11 +10,31 @@
 <main>
     <section class="avaliacao">
         <h3 class="title">Nossas <span>Avaliações</span></h3>
+        {% if media > 0 %}
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="gold" style="flex-shrink: 0;">
+                <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.4 8.167L12 18.896l-7.334 3.869 1.4-8.167L.132 9.211l8.2-1.193z"/>
+            </svg>
+            <h3 class="title" style="margin: 0;">{{ media }}</h3>
+            {% if qtd == 1 %}
+            <p>({{ qtd }} Avaliação)</p>
+            {% elif qtd > 0 %}
+            <p>({{ qtd }} Avaliações)</p>
+            {% endif %}
+        </div>
+        {% endif %}
 
         {% for post in posts %}
         <div class="caixa">
             <h2>{{ post.title }}</h2>
             <p>{{ post.content }}</p>
+
+            {% for i in range(post.nota|int) %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="gold">
+                <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.4 8.167L12 18.896l-7.334 3.869 1.4-8.167L.132 9.211l8.2-1.193z"></path>
+            </svg>
+
+            {% endfor %}
             <!-- <small>{{ post.email }}</small> -->
             <time class="hora">{{ post.data }}</time>
         </div>
