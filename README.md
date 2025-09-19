@@ -42,6 +42,16 @@
 <!-- Coloque aqui imagens do site rodando, se possível -->
 ![tela inicial](App/static/img/telainicial.png)
 
+![fromulario](App/static/img/formulariogithub.png)
+
+![sobre](App/static/img/sobre.png)
+
+![cardapio](App/static/img/cardapiogithub.png)
+
+![avaliação](App/static/img/avaliacaogithub.png)
+
+![mobilel](App/static/img/mobile.png)
+
 ## 👨‍💻 Equipe
 
 [@odilon007](https://github.com/odilon007)
@@ -49,5 +59,6 @@
 [@MatheusMachado16](https://github.com/MatheusMachado16)
 
 [@omarhenriqu3](https://github.com/omarhenriqu3)
+
 
 
