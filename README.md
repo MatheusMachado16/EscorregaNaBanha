@@ -52,6 +52,10 @@
 
 ![mobilel](App/static/img/mobile.png)
 
+![mobile sobrel](App/static/img/mobilesobre.png)
+
+![mobile avaliação](App/static/img/mobileavaliacao.png)
+
 ## 👨‍💻 Equipe
 
 [@odilon007](https://github.com/odilon007)
@@ -59,6 +63,7 @@
 [@MatheusMachado16](https://github.com/MatheusMachado16)
 
 [@omarhenriqu3](https://github.com/omarhenriqu3)
+
 
 
 
