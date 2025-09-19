@@ -40,7 +40,7 @@
     http://127.0.0.1:5000/
 ## 🖼️ Capturas de Tela
 <!-- Coloque aqui imagens do site rodando, se possível -->
-Em breve...
+![tela inicial](App/static/img/telainicial.png)
 
 ## 👨‍💻 Equipe
 
@@ -49,4 +49,5 @@ Em breve...
 [@MatheusMachado16](https://github.com/MatheusMachado16)
 
 [@omarhenriqu3](https://github.com/omarhenriqu3)
+
 
