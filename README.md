@@ -47,3 +47,6 @@ Em breve...
 [@odilon007](https://github.com/odilon007)
 
 [@MatheusMachado16](https://github.com/MatheusMachado16)
+
+[@omarhenriqu3](https://github.com/omarhenriqu3)
+
